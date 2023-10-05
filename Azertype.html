@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azertype</title>
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/functions.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="wrapper-main">
+        <div class="header-main">
+            <h1> AzerType</h1>
+            <h2> L'Application pour écrire plus vite ! </h2>
+        </div>
+        <div class="header-main-sm"> 
+            <a class="fb" id="fb" href="www.facebook.com" alt="Ceci est un lien facebook">
+                <div class="header-main-sm-fb"></div>
+            </a>
+            <a href="www.facebook.com">
+                <div class="header-main-sm-insta"></div>
+            </a>
+            <div class="burger-menu-btn"></div>
+        </div>            
+    </header>
+    <main class="wrapper-main">
+        <div class="azertype-main"> 
+            <p> Veuillez sélectionner votre type de jeux. </p>   
+            <div class="azertype-main zoneChoix">
+                <input type="radio" name="optionSource" id="mots" value="mots">
+                <label for="mots"> Mots </label>
+                <input type="radio" name="optionSource" id="phrases" value="phrases">
+                <label for="phrases"> Phrases </label>
+            </div>
+        </div>
+    </main> 
+    <section class="wrapper-main">
+        <div id="liste" class="liste"> 
+            <h4>Azerty</h4>
+        </div> 
+    </section>
+    <section class="wrapper-main">
+        <div class="zoneTexte">
+            <input type="text" name="texte" id="texte" placeholder="Ecrivez votre réponse ici" value=""></input>
+            <button class="button" id="valider"> Valider </button>
+        </div>
+    </section>      
+    <section class="wrapper-main">
+        <div class="score" id="Test">
+            <h3> Votre score : <span>0</span> </h3>
+        </div>        
+    </section>
+    <section class="wrapper-main">
+        <div class="button-start">
+            <button class="button" id="start"> Démarrer </button>
+        </div>        
+    </section> 
+</body>
+</html>
+
+
+
