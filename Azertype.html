@@ -8,11 +8,26 @@
     <script src="scripts/functions.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/modale.js" defer></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div class="modale-background">
+        <div class="modal">
+            <h5>Partager votre score</h5>
+            <form novalidate>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" placeholder="Votre nom...">
+                <label for="email">Avec qui partager votre score ?</label>
+                <input type="email" id="email" placeholder="nom@domaine.com">
+                <button id="btnSendMail">Partager</button>
+                <!--<span></span>-->
+            </form>
+            
+        </div>
+    </div>
     <header class="wrapper-main">
         <div class="header-main">
             <h1> AzerType</h1>
@@ -28,6 +43,8 @@
             <div class="burger-menu-btn"></div>
         </div>            
     </header>
+    
+
     <main class="wrapper-main">
         <div class="azertype-main"> 
             <p> Veuillez sélectionner votre type de jeux. </p>   
@@ -58,8 +75,14 @@
     <section class="wrapper-main">
         <div class="button-start">
             <button class="button" id="start"> Démarrer </button>
+        </div>
+        <div class="share-button">
+            <button class="button" id="share"> Partager </button>
         </div>        
-    </section> 
+    </section>
+    
+    
+
 </body>
 </html>
 

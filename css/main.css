@@ -31,7 +31,7 @@
       /*background-color: var(--site-color-01);*/
       flex-wrap: wrap;
       /*position: relative ; /* -- Fixed on top -- */
-      z-index: 1000;
+      /*z-index: 1000;*/
   }
   /*.header-main::after {
     content: "";
@@ -344,7 +344,7 @@
   */
   
   .wrapper-main {
-    width: 1250px;
+    width: 80%;
     margin: 0 auto;
   }
   
@@ -398,6 +398,119 @@
     width: 100%;
   }*/
   
+
+  /**
+  * Modal
+  */
+  
+body .modale-background {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    margin: 0 auto;
+    background-color: rgba(230, 181, 181, 0.5);
+  }
+
+  /* .wrapper-main{
+  display: none; /* Caché par défaut*/
+  /*position: fixed; 
+  z-index: 1; /* Apparaît toujours au-dessus */
+  /*border-radius: 30px;
+  width: 80%;
+  height: 100%;
+  font-size: 0.1rem;
+  /*overflow: auto; /* Permet le scrolling si besoin */
+  /*background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
+  
+} */
+
+
+
+/* .wrapper-main .modal {
+  background-color: var(site-color-01);
+  width: 100%;
+  color: #eeeeee;
+  line-height: 1.75;    
+  font-family: Roboto;
+  font-size: 1.4rem;
+  text-align: center;
+} */
+.modal {
+  /*display: none; /* Caché par défaut*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: var(--site-color-01-hover);
+  width: 300px;
+  height: auto;
+  overflow: auto; /* Permet le scrolling si besoin */
+  color: #eeeeee;
+  line-height: 1.75;    
+  font-family: Roboto;
+  font-size: 1.4rem;
+}
+
+.active {
+  display: flex !important;
+}
+
+.modal h5 {
+  background-color: var(site-color-01);
+  width: 100%;
+  color: #eeeeee;
+  line-height: 1.75;    
+  font-family: Roboto;
+  font-size: 3rem;
+  text-align: center;
+}
+
+  /* .wrapper-main{
+  display: none; /* Caché par défaut*/
+  /*position: fixed; 
+  z-index: 1; /* Apparaît toujours au-dessus */
+  /*border-radius: 30px;
+  width: 80%;
+  height: 100%;
+  font-size: 0.1rem;
+  /*overflow: auto; /* Permet le scrolling si besoin */
+  /*background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
+  
+} */
+ 
+
+
+/* de OCR .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #f76c5e;
+    border-radius: 30px;
+    z-index: 1;
+} */
+
+  
   
   /*Deactivating the burger menu for desktop*/
   .burger-menu, 
@@ -424,7 +537,7 @@
         position: fixed;
         width: 100%;
         height: 100vh;
-        z-index: 900;
+        /*z-index: 900;*/
         background-color: #111;
       }
   
@@ -463,7 +576,10 @@
       .wrapper-main {
         width: calc(100% - 40px);
       }
-    
+      
+      /* .wrapper-main .modal-background{
+        width: calc(100% - 40px);
+      } */
       
       .header-main {
         padding-left: 5%;
@@ -514,12 +630,10 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}*/
   }
-  
 
-  
-  /*
-  FORM Inputs
-  */
+  /**
+   *FORM Inputs
+   */
   
   .wrapper-main form {
     font-size: 3rem;
@@ -549,6 +663,10 @@
     width: 70%;
     border-radius: 8px;
     padding: 10px;
+  }
+
+  .error {
+    outline: 4px solid rgb(226, 20, 20);
   }
   
   
@@ -702,6 +820,7 @@
     display: flex;   
     font-family: Roboto;
     font-size: 2.6rem;
+    width: 100%;
 }
 
 header h1 {

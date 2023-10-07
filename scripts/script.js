@@ -1,3 +1,30 @@
+let chaine ="ca-chalot";
+let regex = new RegExp("[a-z0-9A-Z._-]+@[a-z0-9A-Z._-]+\.[a-zA-Z]+")
+//let regex = new RegExp("^[a-z]+$");
+let resultat = regex.test(chaine);
+console.log(resultat);
+
+
+let form = document.querySelector("form")
+
+form.addEventListener("submit", (event) => {
+    try {
+        event.preventDefault();
+
+        let baliseNom = document.getElementById("nom")
+        verifierChamp(baliseNom)
+
+        let balisePrenom = document.getElementById("prenom")
+        verifierChamp(balisePrenom)
+
+        let baliseEmail = document.getElementById("email")
+        verifierChamp(baliseEmail)
+        
+    } catch (error) {
+        console.log("Une erreur est survenue : " + error.message)
+    }
+})
+
 // on injecte les mots
 
 //////////////////////////////////////////////////////////////////
@@ -56,13 +83,13 @@ for (i = 0;
 //////////////////////////////////////////////////////////////////
 // On check le gameType
 //////////////////////////////////////////////////////////////////
-let listeInputRadio = document.getElementsByName("optionSource") ; // les boutons radio
+/* let listeInputRadio = document.getElementsByName("optionSource") ; // les boutons radio
     
 for (i = 0;
      i < listeInputRadio.length;
      i++) {
         console.log(listeInputRadio[i].checked)
-     }
+     } */
 
 
 
